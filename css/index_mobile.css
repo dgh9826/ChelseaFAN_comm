@@ -1,0 +1,109 @@
+header>div nav{
+    display: none;
+}
+header>div h1{
+    padding:.812rem 0 .75rem .625rem;
+}
+header> div .spot{
+    right:4.5rem;
+    top :1.3rem;
+}
+header > div .spot i{
+    display: inline-block;
+    font-size: 2rem;
+}
+header> div .spot li a{
+    padding:0;
+}
+header > div .spot li~li{
+    padding-left: 1.6875rem;
+}
+header > div .spot li~li a:after{
+    display: none;
+}
+header>div h1 a img{
+    width:2.8125rem;
+}
+header > div .total {
+    display: inline-block;
+    font-size: 2rem;
+    position: absolute;
+    right: .75rem;
+    top:1.3rem;
+}
+header>div .spot li:nth-child(3),
+header>div .spot li:nth-child(4),
+header>div .spot li:nth-child(5){
+    display: none;
+}
+header .total span,
+header>div .spot li span{
+    position: absolute;
+    left:-40000%;
+}
+@font-face {
+    font-family: "NEXON Lv2 Gothic Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-family: "NEXON Lv2 Gothic Bold";
+    font-size: 1.5em;
+    margin: 5px;
+}
+.iconBtn {
+    width: 35px;
+    cursor: pointer;
+}
+.menuWrap.on {
+    right: 0;
+}
+.menuList{
+    margin-top:50px;
+}
+.listStyle{
+    margin-top:20px;
+    font-size: 30px;
+    line-height: 200%;
+}
+.listStyle a:hover{
+    text-decoration: underline;
+}
+.menuWrap {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 400;
+    width: 300px;
+    height: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    transition: right 0.3s ease-in-out;
+    background-color: #f0f0f0;
+}
+
+#menuBtn {
+    width: 35px;
+    z-index: 401;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#dimmed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.btnRotate {
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+}
